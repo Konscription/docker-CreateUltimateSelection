@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM eclipse-temurin:24.0.1_9-jre-noble
+FROM eclipse-temurin:17.0.15_6-jre-noble
 
 ENV MINECRAFT_PORT=25565
 #ENV JAVA=/usr/local/openjdk-22/bin/java
@@ -25,7 +25,10 @@ USER minecraft
 VOLUME /data
 WORKDIR /data
 
+#minecraft Server port
 EXPOSE 25565/tcp
+#create mod voice chat
+EXPOSE 24454/tcp 
 
 ENV MOTD=" Server"
 

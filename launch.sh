@@ -30,10 +30,14 @@ if ! [[ -f Create-Ultimate%20Selection%20Serverpack%20MC%201.20.1-12.2.0.zip ]];
     chmod u+x start.sh
 fi
 
+sed -i "s/SKIP_JAVA_CHECK=.*/SKIP_JAVA_CHECK=true/" /data/variables.txt
+sed -i "s/USE_SSJ=.*/USE_SSJ=false/" /data/variables.txt
+
 # If a MAX_RAM environment variable is set, update the memory configuration in server-setup-config.yaml
 if [[ -n "$MAX_RAM" ]]; then
 	sed -i "s/JAVA_ARGS=.*/JAVA_ARGS=\"-Xmx$MIN_RAM -Xms$MAX_RAM\"" /data/variables.txt
 fi
+
 
 # If a MOTD is specified, set it in the server.properties file
 if [[ -n "$MOTD" ]]; then
@@ -59,6 +63,8 @@ if [[ -z "$MINECRAFT_PORT" ]]; then
 else
 sed -i "s/server-port.*/server-port=$MINECRAFT_PORT/g" server.properties
 fi
+
+
 
 # Download a secure log4j2 configuration file to mitigate known vulnerabilities
 curl -Lo log4j2_112-116.xml https://launcher.mojang.com/v1/objects/02937d122c86ce73319ef9975b58896fc1b491d1/log4j2_112-116.xml
