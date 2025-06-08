@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM openjdk:11-jdk-buster
+FROM openjdk:25-slim-bookworm
 
 ENV MINECRAFT_PORT=25565
 
