@@ -1,8 +1,9 @@
 # syntax=docker/dockerfile:1
 
-FROM cimg/openjdk:23.0.2
+FROM eclipse-temurin:24.0.1_9-jre-noble
 
 ENV MINECRAFT_PORT=25565
+ENV JAVA=/usr/bin/java
 
 LABEL version="12.2.0"
 LABEL homepage.group=Minecraft
