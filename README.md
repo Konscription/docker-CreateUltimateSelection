@@ -40,7 +40,7 @@ Available environment variables:
 |EULA|default is set to `false`|Yes|
 |MAX_RAM|default is `4G`|No|
 |MIN_RAM|default is `4G`|No|
-|OPS|You can set Ops automatically by adding a comma separated list of player names.|No|
+|OPS|You can set Ops automatically by adding a comma separated list of player names. <br> example: `OPS="OpPlayer1,OpPlayer2"`|No|
 |ALLOWLIST| you can set a whitelist automatically by adding a comma-separated list of player names.|No|
 |MINECRAFT_PORT|You can change internal server port|No|
 |MOTD|You can change from the default MOTD: "Create Ultimate Selection 12.2.0 Server Powered by Docker"|No|
@@ -49,13 +49,6 @@ Available environment variables:
 |**Path**|**Description**|**Required**|
 |--------|---------------|------------|
 |/data|used to store the server files|Yes|
-
-### Adding Minecraft Operators
-
-Set the enviroment variable `OPS` with a comma separated list of players.
-
-example:
-`OPS="OpPlayer1,OpPlayer2"`
 
 ## Troubleshooting
 <details><summary>Expand</summary>
