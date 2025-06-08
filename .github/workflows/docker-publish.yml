@@ -49,13 +49,13 @@ jobs:
           RELEASE_TAG="${{ github.event.release.tag_name }}"
 
           if [[ -n "$CUSTOM_TAG" ]]; then
-            TAGS="${IMAGE_NAME}:${CUSTOM_TAG}"
+            TAGS="${IMAGE_NAME}:${CUSTOM_TAG},${IMAGE_NAME}:main,${IMAGE_NAME}:latest"
           elif [[ -n "$RELEASE_TAG" ]]; then
-            TAGS="$IMAGE_NAME:${RELEASE_TAG}"
+            TAGS="$IMAGE_NAME:${RELEASE_TAG},${IMAGE_NAME}:main,${IMAGE_NAME}:latest"
           elif [[ "${GITHUB_REF}" == refs/heads/main ]]; then
             TAGS="${IMAGE_NAME}:main,${IMAGE_NAME}:latest"
           elif [[ "${GITHUB_REF}" == refs/tags/* ]]; then
-            TAGS="${IMAGE_NAME}:${{ steps.gitinfo.outputs.TAG_NAME }}"
+            TAGS="${IMAGE_NAME}:${{ steps.gitinfo.outputs.TAG_NAME }},${IMAGE_NAME}:main,${IMAGE_NAME}:latest"
           fi
 
           echo "tags=${TAGS}" >> $GITHUB_OUTPUT
