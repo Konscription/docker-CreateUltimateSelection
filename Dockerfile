@@ -28,4 +28,5 @@ EXPOSE 25565/tcp
 
 ENV MOTD=" Server"
 
+ENTRYPOINT ["/bin/bash"]
 CMD ["/launch.sh"]
