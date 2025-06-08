@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM openjdk:25-slim-bookworm
+FROM openjdk:22-buster
 
 ENV MINECRAFT_PORT=25565
 
@@ -24,6 +24,6 @@ WORKDIR /data
 
 EXPOSE 25565/tcp
 
-ENV MOTD " Server"
+ENV MOTD=" Server"
 
 CMD ["/launch.sh"]
