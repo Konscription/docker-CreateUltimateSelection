@@ -46,9 +46,12 @@ jobs:
           # Default tags
           TAGS=""
           CUSTOM_TAG="${{ github.event.inputs.custom_tag }}"
+          RELEASE_TAG="${{ github.event.release.tag_name }}"
 
           if [[ -n "$CUSTOM_TAG" ]]; then
             TAGS="${IMAGE_NAME}:${CUSTOM_TAG}"
+          elif [[ -n "$RELEASE_TAG" ]]; then
+            TAGS="$IMAGE_NAME:${RELEASE_TAG}"
           elif [[ "${GITHUB_REF}" == refs/heads/main ]]; then
             TAGS="${IMAGE_NAME}:main,${IMAGE_NAME}:latest"
           elif [[ "${GITHUB_REF}" == refs/tags/* ]]; then
