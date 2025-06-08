@@ -58,15 +58,17 @@ example:
 `OPS="OpPlayer1,OpPlayer2"`
 
 ## Troubleshooting
+<details><summary>Expand</summary>
 
 ### Accept the EULA
 Did you pass in the environment variable EULA = `true`?
 
-### Permissions of Files
+### File Permissions
 This container is designed for [Unraid](https://unraid.net) so the user in the container runs on uid 99 and gid 100.  This may cause permission errors on the /data mount on other systems.
 
 ### Resetting
 If the install is incomplete for some reason.  Deleting the downloaded server file in /data will restart the install/upgrade process.
+</details>
 
 ## Source
 Github: https://github.com/Konscription/docker-CreateUltimateSelection
