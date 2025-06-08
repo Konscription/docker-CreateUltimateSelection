@@ -35,14 +35,20 @@ As the end user, you are repsonsible for accepting the EULA from Mojang to run t
 ## Options
 
 Available environment variables:
+|**Variable**|**Description**|**Required**|
+|------------|---------------|------------|
+|EULA|default is set to `false`|Yes|
+|MAX_RAM|default is `4G`|No|
+|MIN_RAM|default is `4G`|No|
+|OPS|You can set Ops automatically by adding a comma separated list of player names.|No|
+|ALLOWLIST| you can set a whitelist automatically by adding a comma-separated list of player names.|No|
+|MINECRAFT_PORT|You can change internal server port|No|
+|MOTD|You can change from the default MOTD: "Create Ultimate Selection 12.2.0 Server Powered by Docker"|No|
 
-* EULA false
-* MAX_RAM 4G
-* MIN_RAM 4G
-* OPS
-* ALLOWLIST comma-separated usernames
-* MINECRAFT_PORT 25565 can change internal server port
-* MOTD "Create Ultimate Selection 12.2.0 Server Powered by Docker"
+## Volumes
+|**Path**|**Description**|**Required**|
+|--------|---------------|------------|
+|/data|used to store the server files|Yes|
 
 ### Adding Minecraft Operators
 
@@ -65,4 +71,4 @@ If the install is incomplete for some reason.  Deleting the downloaded server fi
 ## Source
 Github: https://github.com/Konscription/docker-CreateUltimateSelection
 
-Docker: 
+Docker: https://hub.docker.com/repository/docker/konviction/createultimateselection/general
