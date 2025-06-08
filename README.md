@@ -34,11 +34,15 @@ As the end user, you are repsonsible for accepting the EULA from Mojang to run t
 
 ## Options
 
-These environment variables can be set at run time to override their defaults.
+Available environment variables:
 
-* JVM_OPTS "-Xms4048m -Xmx6096m"
+* EULA false
+* MAX_RAM 4G
+* MIN_RAM 4G
+* OPS
+* ALLOWLIST comma-separated usernames
+* MINECRAFT_PORT 25565 can change internal server port
 * MOTD "Create Ultimate Selection 12.2.0 Server Powered by Docker"
-* LEVEL world
 
 ### Adding Minecraft Operators
 
@@ -59,6 +63,6 @@ This container is designed for [Unraid](https://unraid.net) so the user in the c
 If the install is incomplete for some reason.  Deleting the downloaded server file in /data will restart the install/upgrade process.
 
 ## Source
-Github: 
+Github: https://github.com/Konscription/docker-CreateUltimateSelection
 
 Docker: 

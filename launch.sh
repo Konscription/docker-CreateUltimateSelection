@@ -38,6 +38,9 @@ fi
 # If a MOTD is specified, set it in the server.properties file
 if [[ -n "$MOTD" ]]; then
     sed -i "s/motd\s*=/ c motd=$MOTD" /data/server.properties
+else
+    # If no MOTD is provided, set a default message
+    sed -i "s/motd\s*=/ c motd=Create Ultimate Selection 12.2.0 Server Powered by Docker" /data/server.properties
 fi
 
 # If operator player list is provided as comma-separated values, split and write it to ops.txt
