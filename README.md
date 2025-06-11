@@ -1,4 +1,4 @@
-# [Create Ultimate Selection 12.2.0](https://www.curseforge.com/minecraft/modpacks/create-ultimate-selection) on Curseforge
+# [Create Ultimate Selection 12.3.0](https://www.curseforge.com/minecraft/modpacks/create-ultimate-selection) on Curseforge
 
 <!-- toc -->
 

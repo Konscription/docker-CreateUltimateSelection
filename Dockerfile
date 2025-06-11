@@ -6,9 +6,9 @@ ENV MINECRAFT_PORT=25565
 #ENV JAVA=/usr/local/openjdk-22/bin/java
 ENV JAVA=java
 
-LABEL version="12.2.0"
+LABEL version="12.3.0"
 LABEL homepage.group=Minecraft
-LABEL homepage.name="Create Ultimate Selection 12.2.0"
+LABEL homepage.name="Create Ultimate Selection 12.3.0"
 LABEL homepage.icon="https://media.forgecdn.net/avatars/thumbnails/1156/169/64/64/638723864734826252.jpg"
 LABEL homepage.widget.type=minecraft
 LABEL homepage.widget.url=udp://CreateUltimateSelection:25565
