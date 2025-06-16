@@ -18,7 +18,7 @@
 
 This container is built to run on an [Unraid](https://unraid.net) server.
 
-The docker on first run will download the same version as tagged `Create Ultimate Selection 12.4.0` and install it.  This can take a while as the Forge installer can take a bit to complete.  You can watch the logs and it will eventually complete.
+The docker on first run will download the same version as tagged `Create Ultimate Selection 12.5.0` and install it.  This can take a while as the Forge installer can take a bit to complete.  You can watch the logs and it will eventually complete.
 
 After the first run it will simply start the server.
 
