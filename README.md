@@ -1,4 +1,4 @@
-# [Create Ultimate Selection 12.4.0](https://www.curseforge.com/minecraft/modpacks/create-ultimate-selection) on Curseforge
+# [Create Ultimate Selection 12.5.0](https://www.curseforge.com/minecraft/modpacks/create-ultimate-selection) on Curseforge
 
 <!-- toc -->
 
@@ -43,7 +43,7 @@ Available environment variables:
 |OPS|You can set Ops automatically by adding a comma separated list of player names. <br> example: `OPS="OpPlayer1,OpPlayer2"`|No|
 |ALLOWLIST| you can set a whitelist automatically by adding a comma-separated list of player names.|No|
 |MINECRAFT_PORT|You can change internal server port|No|
-|MOTD|You can change from the default MOTD: "Create Ultimate Selection 12.2.0 Server Powered by Docker"|No|
+|MOTD|You can change from the default MOTD: "Create Ultimate Selection 12.5.0 Server Powered by Docker"|No|
 
 ## Volumes
 |**Path**|**Description**|**Required**|
