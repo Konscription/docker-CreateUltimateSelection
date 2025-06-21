@@ -1,4 +1,4 @@
-# [Create Ultimate Selection 12.6.0](https://www.curseforge.com/minecraft/modpacks/create-ultimate-selection) on Curseforge
+# [Create Ultimate Selection 12.7.0](https://www.curseforge.com/minecraft/modpacks/create-ultimate-selection) on Curseforge
 
 <!-- toc -->
 
@@ -18,7 +18,7 @@
 
 This container is built to run on an [Unraid](https://unraid.net) server.
 
-The docker on first run will download the same version as tagged `Create Ultimate Selection 12.6.0` and install it.  This can take a while as the Forge installer can take a bit to complete.  You can watch the logs and it will eventually complete.
+The docker on first run will download the same version as tagged `Create Ultimate Selection 12.7.0` and install it.  This can take a while as the Forge installer can take a bit to complete.  You can watch the logs and it will eventually complete.
 
 After the first run it will simply start the server.
 
@@ -43,7 +43,7 @@ Available environment variables:
 |OPS|You can set Ops automatically by adding a comma separated list of player names. <br> example: `OPS="OpPlayer1,OpPlayer2"`|No|
 |ALLOWLIST| you can set a whitelist automatically by adding a comma-separated list of player names.|No|
 |MINECRAFT_PORT|You can change internal server port|No|
-|MOTD|You can change from the default MOTD: "Create Ultimate Selection 12.6.0 Server Powered by Docker"|No|
+|MOTD|You can change from the default MOTD: "Create Ultimate Selection 12.7.0 Server Powered by Docker"|No|
 
 ## Volumes
 |**Path**|**Description**|**Required**|
