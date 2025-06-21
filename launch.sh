@@ -17,15 +17,14 @@ fi
 
 # If the Create Ultimate Selection server zip is not already present,
 # perform a clean-up of old server files and download/unzip the server package.
-if ! [[ -f Create-Ultimate%20Selection%20Serverpack%20MC%201.20.1-12.6.0.zip ]]; then
+if ! [[ -f Create-Ultimate%20Selection%20Serverpack%20MC%201.20.1-12.7.0.zip ]]; then
     # Remove old configuration and mod files that might interfere with setup
     rm -fr config defaultconfigs kubejs libraries mods forge-*.jar \
            start.* Create-Ultimate%20Selection%20Serverpack%20MC%20*.zip
 
     # Download the Create Ultimate Selection Server zip file from CurseForge and unzip it into /data
-    # https://edge.forgecdn.net/files/6658/547/Create-Ultimate%20Selection%20Serverpack%20MC%201.20.1-12.6.0.zip
-    curl -Lo Create-Ultimate%20Selection%20Serverpack%20MC%201.20.1-12.6.0.zip 'https://edge.forgecdn.net/files/6658/547/Create-Ultimate%20Selection%20Serverpack%20MC%201.20.1-12.6.0.zip'
-    unzip -u -o 'Create-Ultimate%20Selection%20Serverpack%20MC%201.20.1-12.6.0.zip' -d /data
+    curl -Lo Create-Ultimate%20Selection%20Serverpack%20MC%201.20.1-12.7.0.zip 'https://edge.forgecdn.net/files/6676/179/Create-Ultimate%20Selection%20Serverpack%20MC%201.20.1-12.7.0.zip'
+    unzip -u -o 'Create-Ultimate%20Selection%20Serverpack%20MC%201.20.1-12.7.0.zip' -d /data
 
     # Ensure the server start script is executable
     chmod u+x start.sh
@@ -45,7 +44,7 @@ if [[ -n "$MOTD" ]]; then
     sed -i "s/motd\s*=/ c motd=$MOTD" /data/server.properties
 else
     # If no MOTD is provided, set a default message
-    sed -i "s/motd\s*=/ c motd=Create Ultimate Selection 12.6.0 Server Powered by Docker" /data/server.properties
+    sed -i "s/motd\s*=/ c motd=Create Ultimate Selection 12.7.0 Server Powered by Docker" /data/server.properties
 fi
 
 # If operator player list is provided as comma-separated values, split and write it to ops.txt
